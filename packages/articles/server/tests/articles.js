@@ -23,10 +23,10 @@ describe('<Unit Test>', function() {
   describe('Model Article:', function() {
     beforeEach(function(done) {
       user = new User({
-        name: 'Full name',
-        email: 'test@test.com',
-        username: 'user',
-        password: 'password'
+        name: 'Gomoi Mihai',
+        email: 'gomoimihai@test.com',
+        username: 'lethicus',
+        password: '101spqr'
       });
 
       user.save(function() {
