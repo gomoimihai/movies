@@ -19,15 +19,14 @@ var article;
 /**
  * Test Suites
  */
-/*
 describe('<Unit Test>', function() {
   describe('Model Article:', function() {
     beforeEach(function(done) {
       user = new User({
-        name: 'Gomoi Mihai',
-        email: 'gomoimihai@test.com',
-        username: 'lethicus',
-        password: '101spqr'
+        name: 'Full name',
+        email: 'test@test.com',
+        username: 'user',
+        password: 'password'
       });
 
       user.save(function() {
@@ -43,12 +42,12 @@ describe('<Unit Test>', function() {
 
     describe('Method Save', function() {
       it('should be able to save without problems', function(done) {
-        return article.save(function(err,data) {
+        return article.save(function(err) {
           expect(err).to.be(null);
-          expect(data.title).to.equal('Article Title');
-          expect(data.content).to.equal('Article Content');
-          expect(data.user.length).to.not.equal(0);
-          expect(data.created.length).to.not.equal(0);
+          expect(article.title).to.equal('Article Title');
+          expect(article.content).to.equal('Article Content');
+          expect(article.user.length).to.not.equal(0);
+          expect(article.created.length).to.not.equal(0);
           done();
         });
       });
@@ -89,6 +88,3 @@ describe('<Unit Test>', function() {
     });
   });
 });
-*/
-
-
